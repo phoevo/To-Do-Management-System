@@ -1,0 +1,80 @@
+/* styles.css */
+body {
+    display: grid;
+    grid-template-columns: .5fr repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    
+}
+.curve{
+    background: blue;
+    border-radius: 0 100% 90% 0;
+    position: fixed;
+    width: 30%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#sidebar{
+    grid-area: 1 / 1 / 6 / 2; 
+    display: flex;
+    justify-content: start;
+    padding-top: 50px;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    
+}
+
+form{
+    width: 50%;
+    border: 2px solid white;
+}
+
+.input{
+    padding-top: 10px;
+    width: 150px;
+}
+
+header{
+    grid-area: 1 / 2 / 2 / 4;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+}
+
+section{
+    grid-area: 2 / 2 / 5 / 4;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#taskDisplay{
+    z-index: 1;
+}
+
+#priorityBtn{
+}
+
+
+
+
+
+  

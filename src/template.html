@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Management System</title>
+</head>
+<body>
+
+    <sidebar id="sidebar">
+        <div class="curve"></div>
+        <h1>Add Task</h1>
+
+        <form>
+            <label for= "title">Title</label>
+            <input class="input" type="text" id="title" required>
+       
+            <label for= "description">Description</label>
+            <input class="input" type="text" id="description" required>
+
+            <label for= "Priority">Priority</label>
+            <input class="input" type="number" id="priority" min="1" max="10" required>
+
+            <label for= "deadline">Deadline</label>
+            <input class="input" type="date" id="deadline">
+
+            <input type="submit" value="Add Task" id="addTaskBtn"></input>
+        </form>
+    </sidebar>
+
+    <header>
+        <div id="taskHeader">
+            <h1>task task </h1>
+            <button id="priorityBtn"> Priority</button>
+            <button id="dateBtn">Date</button>
+
+        </div>
+    </header>
+
+
+    <section id="taskDisplay">
+    </section>
+        
+        
+    
+    
+    
+</body>
+</html>
