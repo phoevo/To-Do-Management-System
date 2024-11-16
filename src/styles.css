@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     display: grid;
     grid-template-columns: .5fr repeat(2, 1fr);
@@ -8,18 +7,24 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: white;
+    font-family: Helvetica, sans-serif;
+    overflow: hidden;
+    
     
 }
 .curve{
-    background: blue;
-    border-radius: 0 100% 90% 0;
+    /* attempted curve for a more Eventora feeling.*/
+    background: rgb(0, 50, 255, 0.75);
+    border-radius: 0 300% 100% 0; 
     position: fixed;
-    width: 30%;
-    height: 200%;
+    width: 28%;
+    height: 140%;
     top: 0;
     left: 0;
     z-index: -1;
 }
+
+
 
 #sidebar{
     grid-area: 1 / 1 / 6 / 2; 
@@ -32,9 +37,19 @@ body {
     
 }
 
+#sidebar h1{
+    font-size: 2rem;
+}
+
+
 form{
     width: 50%;
-    border: 2px solid white;
+    height: 300px;
+}
+
+form i{
+    font-size: smaller;
+    opacity: 0.5;
 }
 
 .input{
@@ -67,14 +82,73 @@ section{
 
 
 #taskDisplay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     z-index: 1;
+    gap: 20px;
+    overflow-y: scroll;
 }
 
-#priorityBtn{
+.taskCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+    background-color: rgb(100, 200, 255, 0.1);
+    height: 100px;
+    width: 80%;
+    border-radius: 8px;  
 }
 
 
 
+.taskItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+#cardDescription{
+    display: block;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    text-align: center;
+    height: 60px;
+    width: 200px;
+}
+
+.taskCard label{
+    font-weight: 700;
+}
+
+button, #addTaskBtn{
+    border-radius: 8px;
+    height: 30px;
+    width: 80px;
+    border: none;
+}
+
+button:hover, #addTaskBtn:hover{
+    transform: translateY(-2px);
+    transition: 100ms;
+}
+
+#addTaskBtn{
+    margin-top: 10px;
+}
+
+
+form [id]{
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
 
   

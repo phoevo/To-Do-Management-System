@@ -3,4 +3,3 @@ import load from "./Load";
 
 load();
 
-
